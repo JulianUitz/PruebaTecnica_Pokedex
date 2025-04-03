@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 999px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f6d644; /* Fondo amarillo Pokémon */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b4cca; /* Azul Pokémon */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #000000;
+}
+
+input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #3b4cca; /* Azul Pokémon */
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s;
+  color: #000000;
+}
+
+input:focus {
+  border-color: #ff1a1a; /* Rojo Pokémon */
+  box-shadow: 0 0 8px rgba(255, 26, 26, 0.5);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 8px;
+  background: #ffffff;
+  border: 2px solid #3b4cca; /* Azul Pokémon */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 0;
+}
+
+.dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown li:hover {
+  background: #f9f9f9;
+  transform: translateX(5px);
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  border: 2px solid #3b4cca; /* Azul Pokémon */
+}
+
+.dropdown div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.dropdown p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.dropdown li:hover img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

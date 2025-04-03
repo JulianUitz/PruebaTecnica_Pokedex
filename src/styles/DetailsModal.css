@@ -1,0 +1,141 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .modal-content {
+    background: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease, fadeIn 0.5s ease;
+    overflow-y: auto;
+    max-height: 90vh;
+    position: relative;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .pokemon-image-container {
+    position: relative;
+    display: inline-block;
+    margin: 15px auto;
+  }
+  
+  .pokemon-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pokemon-image:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shiny-star {
+    position: flex;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #bdbdbd;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .shiny-star.active {
+    color: gold;
+    transform: scale(1.3);
+  }
+  
+  .shiny-star:hover {
+    color: gold;
+    transform: scale(1.1);
+  }
+  
+  .types-container {
+    margin: 20px 0;
+    gap: 10px;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .type {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .modal-content button:hover {
+    background: #e14a4f;
+    transform: translateY(-3px);
+  }
+  
+  .modal-content h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .modal-content p {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .modal-content p strong {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  

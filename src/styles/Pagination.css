@@ -1,0 +1,41 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f6d644; /* Amarillo Pokémon */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-container button {
+    padding: 10px 20px;
+    background-color: #3b4cca; /* Azul Pokémon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-container button:hover:not(:disabled) {
+    background-color: #ff1a1a; /* Rojo Pokémon */
+    transform: scale(1.1);
+}
+
+.page-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a75bb; /* Azul oscuro Pokémon */
+    font-family: 'Arial', sans-serif;
+}
