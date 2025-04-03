@@ -23,4 +23,10 @@ Sigue estos pasos para ejecutar la Pokédex en tu máquina local:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/pokedex.git
+   git clone  https://github.com/JulianUitz/PruebaTecnica_Pokedex.git
+
+2. **Puedes hacer uso incluso de la app de Github para clonar y abrir el directorio**
+
+3. **Instala las dependencias con --npm install**
+
+4. **Ejecuta la app con el servidor de desarrollo -- npm run dev--**
